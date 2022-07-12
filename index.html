@@ -10,6 +10,21 @@
 </head>
 <body onresize="recuperarPalcoJogo()">
 
-    <script>geraPosicao()</script>
+    <div class="painel">
+        <div class="vidas">
+            <img src="./assets/images/coracao_vazio.png">
+            <img src="./assets/images/coracao_vazio.png">
+            <img src="./assets/images/coracao_cheio.png">
+            <div class="cronometro">
+                Tempo restante: ?
+            </div> <!--// cronometro -->
+        </div> <!--// vidas -->
+    </div> <!--// painel -->
+
+    <script>
+        setInterval(function(){
+            geraPosicao()
+        }, 1000)
+    </script>
 </body>
 </html>

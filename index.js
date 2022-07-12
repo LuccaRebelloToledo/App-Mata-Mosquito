@@ -8,6 +8,9 @@ console.log(altura, largura)
 }
 
 function geraPosicao(){
+
+    if(document.getElementById('mosquito')) document.getElementById('mosquito').remove();
+    
 recuperarPalcoJogo();    
 var posicaoX = Math.floor(Math.random() * largura) - 90;
 var posicaoY = Math.floor(Math.random() * altura) - 90;
@@ -22,6 +25,7 @@ mosquitoDOM.className = tamanhoAleatorio() + ' ' + ladoAleatorio();
 mosquitoDOM.style.left = posicaoX + 'px';
 mosquitoDOM.style.top = posicaoY + 'px';
 mosquitoDOM.style.position = 'absolute';
+mosquitoDOM.id = 'mosquito'
 document.body.appendChild(mosquitoDOM)
 }
 
