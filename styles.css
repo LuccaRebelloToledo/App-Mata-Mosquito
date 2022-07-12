@@ -1,0 +1,22 @@
+.mosquitoPequeno {
+    width: 30px;
+    height: 30px;
+}
+
+.mosquitoMedio {
+    width: 45px;
+    height: 45px;
+}
+
+.mosquitoGrande {
+    width: 60px;
+    height: 60px;
+}
+
+.ladoA {
+    transform: scaleX(1)
+}
+
+.ladoB {
+    transform: scaleX(-1);
+}
