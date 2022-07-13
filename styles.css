@@ -1,3 +1,7 @@
+html {
+    cursor: url('./assets/images/cursor.png') 30 30, auto;
+}
+
 body {
     background-image: url(./assets/images/bg.jpg);
     background-size: 100%;
@@ -46,4 +50,8 @@ body {
     float: left;
     font-size: 20px;
     font-weight: bold;
+}
+
+.cursor {
+    cursor: url('./assets/images/cursor.png') 30 30, auto;
 }

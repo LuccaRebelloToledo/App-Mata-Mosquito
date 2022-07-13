@@ -2,14 +2,20 @@ var altura = 0;
 var largura = 0;
 var vidas = 1;
 var tempo = 10;
+var criaMosquitoTempo = 1750;
 
-function iniciarJogo(){
-    var nivel = document.getElementById('nivel').value;
+var nivel = window.location.search;
+nivel = nivel.replace('?', '');
 
-    if(nivel === '') {
-        alert('Selecione um nível para iniciar o jogo')
-        return false;
-    }
+if(nivel === 'normal') {
+    criaMosquitoTempo = 1750;
+    tempo = 50;
+} else if (nivel === 'dificil') {
+    criaMosquitoTempo = 1050;
+    tempo = 30;
+} else if (nivel === 'hardcore') {
+    criaMosquitoTempo = 700;
+    tempo = 10;
 }
 
 function recuperarPalcoJogo(){
