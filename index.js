@@ -3,6 +3,15 @@ var largura = 0;
 var vidas = 1;
 var tempo = 10;
 
+function iniciarJogo(){
+    var nivel = document.getElementById('nivel').value;
+
+    if(nivel === '') {
+        alert('Selecione um nível para iniciar o jogo')
+        return false;
+    }
+}
+
 function recuperarPalcoJogo(){
 altura = window.innerHeight;
 largura = window.innerWidth;
